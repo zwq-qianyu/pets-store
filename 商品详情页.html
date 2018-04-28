@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>商品详情</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" type="text/css" href="./css/shouye-style.css">
+    <link rel="stylesheet" type="text/css" href="./css/shangpingxq.css">
+
+  </head>
+  <body>
+    <!-- 顶部导航条 -->
+    <div class="navbar-wrapper">
+      <div class="container-fluid">
+
+        <!-- 头部悬空头条  导航 -->
+        <div id = "mynav" class="left">
+          <!-- 导航栏 -->
+            <ul>
+              <li id="head-icon"><a href="#"><img src="./images/图标.jpg" height="80px";></a>浅鱼宠物店</li>
+              <li class="five-word"><a href="#">Rabbit系列</a></li>
+              <li class="three-word"><a href="#">Cat系列</a></li>
+              <li class="three-word"><a href="#">Dog系列</a></li>
+              <li class="two-word"><a href="#">商城</a></li>
+              <li class="two-word"><a href="#">服务</a></li>
+              <li class="two-word"><a href="#">社区</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">查询</button> 
+            </form>
+        </div>
+
+        <!-- Single button -->
+        <div class="btn-group" class="right">
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            我的宠物 <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">购物车</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">我的商城</a></li>
+            <!-- <li role="separator" class="divider"></li> -->
+            <li><a href="#">登录/注册</a></li>
+          </ul>
+        </div>
+        <!-- 头部悬空头条结束 -->
+
+       </div>
+
+    </div>
+    <!-- 头部导航条 结束 -->
+    
+
+    <!-- 商城头部开始 -->
+    <div id="mymiddle">
+      <div id="myheader">
+        <h1 style="padding-bottom: 20px">官方商城</h1>
+          <p class="my-more"><a href="#">更多>> </a></p>
+          <ul id="four-li1">
+            <li><a href="#"><img src="./images/官方正品.png"></a></li>
+            <li><a href="#"><img src="./images/满68包邮.png"></a></li>
+            <li><a href="#"><img src="./images/30天退换货.png"></a></li>
+            <li><a href="#"><img src="./images/全国网点售后.png"></a></li>
+          </ul>
+      </div>
+    </div>
+    
+
+    <!-- 商品展示区 -->
+    <div id="show-area">
+      <ul>
+        <li class="show-left">
+          <div class="box">
+            <div class="box-header">
+              <img id="box-header-pic" src="./images/X21-black.png">
+            </div>
+            <div id="box-content">
+              <img src="./images/X21-black.png">
+              <img src="./images/X21-white.png">
+              <img src="./images/X21-red.png">
+              <img src="./images/X21-black.png">
+            </div>
+          </div>
+        </li>
+        <li class="show-right">
+          <iframe src="./in-iframe.html"></iframe>
+        </li>
+      </ul>
+    </div>
+    <!-- 商品展示区 结束 -->
+    
+    <hr style="clear: both;">
+    <!-- 商品详情、用户评价等 -->
+    <div id="myimg-pile">
+      <h3 style="margin-left: 20px;">详细信息</h3>
+      <br>
+      <div id="xq-tu">
+        <img src="./images/xq-1.jpg">
+        <img src="./images/xq-2.jpg">
+        <img src="./images/xq-3.jpg">
+        <img src="./images/xq-4.jpg">
+        <img src="./images/xq-5.jpg">
+        <img src="./images/xq-6.jpg">
+        <img src="./images/xq-7.jpg">
+        <img src="./images/xq-8.jpg">
+        <img src="./images/xq-9.jpg">
+        <img src="./images/xq-10.jpg">
+        <img src="./images/xq-11.jpg">
+        <img src="./images/xq-12.jpg">
+        <img src="./images/xq-13.jpg">
+        <img src="./images/xq-14.jpg">
+        <img src="./images/xq-15.jpg">
+        <img src="./images/xq-16.jpg">
+        <img src="./images/xq-17.jpg">
+        <img src="./images/xq-18.jpg">
+        <img src="./images/xq-19.jpg">
+        <img src="./images/xq-20.jpg">
+        <img src="./images/xq-21.jpg">
+        <img src="./images/xq-22.jpg">
+        <img src="./images/xq-23.jpg">
+      </div>
+    </div>
+    <!-- 商品详情、用户评价等 结束-->
+
+    <hr>
+    <!-- 网页下边栏目录导航 开始 -->
+    <div id="myfooter">
+      <ul>
+        <li id="myfooter-left">
+          <!-- footer 的 mycolumn 第1栏 -->
+          <div class="mycolumn">
+            <div class="mycl-name">热门链接</div>
+            <div class="mycl-content">
+              <ul>
+                <li><a href="#">泰迪犬</a></li>
+                <li><a href="#">布偶猫</a></li>
+                <li><a href="#">多瓦夫兔</a></li>
+                <li><a href="#">查找宠物</a></li>
+                <li><a href="#">体验中心</a></li>
+                <li><a href="#">常见问题</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- footer 的 mycolumn 第2栏 -->
+          <div class="mycolumn">
+            <div class="mycl-name">在线购买</div>
+            <div class="mycl-content">
+              <ul>
+                <li><a href="#">官方商城</a></li>
+                <li><a href="#">选购宠物猫</a></li>
+                <li><a href="#">选购宠物狗</a></li>
+                <li><a href="#">查找宠物兔</a></li>
+                <li><a href="#">宠物回收</a></li>
+                <li><a href="#">服务保障</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- footer 的 mycolumn 第3栏 -->
+          <div class="mycolumn">
+            <div class="mycl-name">服务支持</div>
+            <div class="mycl-content">
+              <ul>
+                <li><a href="#">服务首页</a></li>
+                <li><a href="#">服务网点查询</a></li>
+                <li><a href="#">真伪查询</a></li>
+                <li><a href="#">服务政策</a></li>
+                <li><a href="#">预约看管</a></li>
+                <li><a href="#">看管宠物价格</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- footer 的 mycolumn 第4栏 -->
+          <div class="mycolumn">
+            <div class="mycl-name">浅鱼社区</div>
+            <div class="mycl-content">
+              <ul>
+                <li><a href="#">社区首页</a></li>
+                <li><a href="#">宠粮专区</a></li>
+                <li><a href="#">微博</a></li>
+                <li><a href="#">贴吧</a></li>
+                <li><a href="#">兴趣部落</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- footer 的 mycolumn 第5栏 -->
+          <div class="mycolumn">
+            <div class="mycl-name">关于浅鱼</div>
+            <div class="mycl-content">
+              <ul>
+                <li><a href="#">浅鱼简介</a></li>
+                <li><a href="#">工作机会</a></li>
+                <li><a href="#">新闻资讯</a></li>
+                <li><a href="#">采购平台</a></li>
+                <li><a href="#">加盟平台</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li id="myfooter-right">
+          <div>
+            <a href="#"><img src="./images/zxkf.png"></a>
+          </div>
+          <br>
+          <p>400-678-9666</p>
+          <h6>24小时全国服务热线</h6>
+        </li>
+      </ul>
+      
+      <div id="my-copyright">
+        Copyright &copy;2018
+      </div>
+      <br>
+
+    </div>
+    <!-- 商城底部结束 -->
+
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- 自定义js -->
+    <script type="text/javascript">
+      //获取上面的小图img对象
+      var list = document.getElementById("box-content").getElementsByTagName("img"); 
+
+      //遍历图片并添加鼠标移入事件
+      for(var i=0;i<list.length;i++){
+        list[i].onmouseover=function(){
+          document.getElementById("box-header-pic").src = this.src;
+        };
+      }
+  </script>
+  </body>
+</html>
