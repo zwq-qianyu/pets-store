@@ -12,61 +12,16 @@
     <!-- Custom styles for this template -->
     <link href="./css/carousel.css" rel="stylesheet">
     <!-- 自定义样式 -->
-    <style type="text/css">
-    	/* 清除原有样式 */
-		div,ul,li,a,a:hover{padding: 0px;margin: 0px;text-decoration: none;}
-		ul{list-style: none;}
-		/* 导航栏样式控制开始 */
-		#mynav{width: 100%;height: 80px;margin-top: 5px;background:rgba(0,0,0,0) none repeat scroll !important;font-size: 14px;line-height: 60px;}
-		#head-icon{margin-left: 10px;margin-right: 25px;}
-		#mynav ul li{
-		width: 80px;
-		float: left;
-		margin-left: 10px;
-		}
-		#mynav ul li.five-word{width: 80px;color: rgba(0,0,0,1);}
-		#mynav ul li.three-word{width: 60px;color: rgba(0,0,0,1);}
-		#mynav ul li.two-word{width: 50px;color: rgba(0,0,0,1);} /*实现背景透明文字不透明操作*/
-
-		#mynav ul li a{
-		display: block;
-		text-decoration: none;
-		font-weight: bold;
-		color: #333;
-		font-size: 14px;
-		line-height: 80px;
-		}
-		#mynav ul li a:hover{
-		color: rgb(0, 195, 245);
-		}
-		#mynav form{margin-left: 200px;background:rgba(0,0,0,0) none repeat scroll !important;}
-		#mynav form button{margin-left: 20px;background:rgba(0,0,0,0) none repeat scroll !important;border: 0px;font-weight: bold;}
-		#mynav .navbar-btn{font-size: 14px;margin-top: 22px;margin-left: 120px;background:rgba(0,0,0,0) none repeat scroll !important;border: 0px;font-weight: bold;}
-		/* 导航栏样式控制结束 */
-
-		/* carousel样式控制 */
-		.carousel-inner > .item > img{
-		background-color: #fff;
-		margin-left: 10.8%;  /*使得头部的三张图片都能居中放置*/
-		}
-		
-		/* col-lg-3类样式控制 */
-		/* 1.控制首页4张商品图片的样式 */
-		.myimg{display: block;width: 280px;height: 280px;margin-top: 12px;}
-		.myimg:hover{cursor: pointer;}
-		/* 2.控制首页4张商品图片下面文字的样式 */
-		.col-lg-3 a h2{color: #000;}
-		.col-lg-3 a h2:hover{cursor: pointer;color: rgb(0, 195, 245);}
-    </style>
+    <link rel="stylesheet" type="text/css" href="./css/shouye-style.css">
   </head>
 
   <body>
-    <!-- 导航条 -->
+    <!-- 导航条 --> 
     <div class="navbar-wrapper navbar-fixed-top">
       <div class="container-fluid">
 
         <!-- 头部悬空头条  导航 -->
-        <div id = "mynav">
+        <div id = "mynav" class="left">
           <!-- 导航栏 -->
             <ul>
               <li id="head-icon"><a href="#"><img src="./images/图标.jpg" height="80px";></a>浅鱼宠物店</li>
@@ -83,7 +38,20 @@
               </div>
               <button type="submit" class="btn btn-default">查询</button> 
             </form>
-            <button type="button" class="btn btn-default navbar-btn">登录</button>
+        </div>
+
+        <!-- Single button -->
+        <div class="btn-group" class="right">
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            我的宠物 <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">购物车</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">我的商城</a></li>
+            <!-- <li role="separator" class="divider"></li> -->
+            <li><a href="#">登录/注册</a></li>
+          </ul>
         </div>
         <!-- 头部悬空头条结束 -->
 
@@ -105,19 +73,19 @@
         <div class="item active">
           <img src="./images/cat-1.jpg" alt="...">
           <div class="carousel-caption">
-            cute cat
+            <h1>cute cat</h1>
           </div>
         </div>
         <div class="item">
           <img src="./images/dog-1.jpg" alt="...">
           <div class="carousel-caption">
-            your's dog
+            <h1>your's dog</h1>
           </div>
         </div>
         <div class="item">
           <img src="./images/rabbit-1.jpg" alt="...">
           <div class="carousel-caption">
-            white rabbit
+            <h1>white rabbit</h1>
           </div>
         </div>
       </div>
@@ -134,42 +102,137 @@
     </div>
     <!-- Carousel结束 -->
 
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
+    <!-- Marketing messaging and featurettes 开始 -->
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-3">
           <a href="#"><img class="myimg" src="./images/sy-1.jpg" alt="Generic placeholder image"></a>
-          <a href="#"><h2>泰迪犬</h2></a>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <a class="a-h2" href="#"><h2>泰迪犬</h2></a>
+          <p>泰迪犬（英文名：toypoodle）并不是狗狗的品种，泰迪犬只是贵宾犬的一种修剪方式。很多打着泰迪贵宾旗号的泰迪幼犬贵宾犬，其实为失格的贵宾犬，一般都眼圆，耳位高，嘴巴又粗又短。贵宾则一般是杏眼，显得睿智，嘴巴纤长尖翘，很优美。泰迪这个称呼由于亲切，并且和泰迪熊玩偶很相像，所以泰迪犬这个称呼就“不胫而走”了。</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-3 -->
         <div class="col-lg-3">
           <a href="#"><img class="myimg" src="./images/sy-2.jpg" alt="Generic placeholder image"></a>
-          <a href="#"><h2>布偶猫</h2></a>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <a class="a-h2" href="#"><h2>布偶猫</h2></a>
+          <p>布偶猫，又称“布拉多尔（Ragdoll）”，发源于美国，是一种杂交品种宠物猫。是现存体型最大、体重最重的猫之一。头呈楔形，眼大而圆，被毛丰厚，四肢较长且富有肉感，尾长，身体柔软，毛色有重点色、手套色或双色等等。布偶猫较为温顺好静，对人友善。其美丽优雅又非常类似于狗的性格（Puppy cat）而又被称为"仙女猫"，"小狗猫"。</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-3 -->
         <div class="col-lg-3">
           <a href="#"><img class="myimg" src="./images/sy-3.jpg" alt="Generic placeholder image"></a>
-          <a href="#"><h2>萨摩耶</h2></a>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <a class="a-h2" href="#"><h2>萨摩耶</h2></a>
+          <p>萨摩耶犬（英文：Samoyed），别称萨摩耶，原是西伯利亚的原住民萨摩耶族培育出的犬种，一岁前调皮、灵动。它机警、强壮、灵活、美丽、高贵优雅、乖巧可爱，有着非常引人注目的外表，有“微笑天使”的称号，也有着“微笑天使面孔，捣蛋魔鬼内心”之称，萨摩耶犬的颜色为白色；部分带有很浅的浅棕色、奶酪色、浅棕色。</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-3 -->
         <div class="col-lg-3">
           <a href="#"><img class="myimg" src="./images/sy-4.jpg" alt="Generic placeholder image"></a>
-          <a href="#"><h2>比熊</h2></a>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <a class="a-h2" href="#"><h2>比熊</h2></a>
+          <p>比熊犬（法语：Bichon Frisé）原产于地中海地区，是一种小型犬品种。它们不会自然脱毛，因此毛发需要整理。颜色一般白色。原称巴比熊犬，后缩为比熊犬。怀疑是巴比特犬和水猎融犬的后裔。是一种娇小的、强健的白色粉扑型的狗，具有欢快的性格，从它羽毛般欢快地卷在背后的尾巴和好奇的眼神中就能体现出来。外形可爱，深受大家喜欢。</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-3 -->
       </div><!-- /.row -->
+    </div>
+    <!-- Marketing messaging and featurettes 结束 -->
     
+    <br><br>
+    <hr/>
+    <!-- 网页下边栏目录导航 开始 -->
+    <div id="myfooter">
+      <ul>
+        <li id="myfooter-left">
+          <!-- footer 的 mycolumn 第1栏 -->
+          <div class="mycolumn">
+            <div class="mycl-name">热门链接</div>
+            <div class="mycl-content">
+              <ul>
+                <li><a href="#">泰迪犬</a></li>
+                <li><a href="#">布偶猫</a></li>
+                <li><a href="#">多瓦夫兔</a></li>
+                <li><a href="#">查找宠物</a></li>
+                <li><a href="#">体验中心</a></li>
+                <li><a href="#">常见问题</a></li>
+              </ul>
+            </div>
+          </div>
 
+          <!-- footer 的 mycolumn 第2栏 -->
+          <div class="mycolumn">
+            <div class="mycl-name">在线购买</div>
+            <div class="mycl-content">
+              <ul>
+                <li><a href="#">官方商城</a></li>
+                <li><a href="#">选购宠物猫</a></li>
+                <li><a href="#">选购宠物狗</a></li>
+                <li><a href="#">查找宠物兔</a></li>
+                <li><a href="#">宠物回收</a></li>
+                <li><a href="#">服务保障</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- footer 的 mycolumn 第3栏 -->
+          <div class="mycolumn">
+            <div class="mycl-name">服务支持</div>
+            <div class="mycl-content">
+              <ul>
+                <li><a href="#">服务首页</a></li>
+                <li><a href="#">服务网点查询</a></li>
+                <li><a href="#">真伪查询</a></li>
+                <li><a href="#">服务政策</a></li>
+                <li><a href="#">预约看管</a></li>
+                <li><a href="#">看管宠物价格</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- footer 的 mycolumn 第4栏 -->
+          <div class="mycolumn">
+            <div class="mycl-name">浅鱼社区</div>
+            <div class="mycl-content">
+              <ul>
+                <li><a href="#">社区首页</a></li>
+                <li><a href="#">宠粮专区</a></li>
+                <li><a href="#">微博</a></li>
+                <li><a href="#">贴吧</a></li>
+                <li><a href="#">兴趣部落</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- footer 的 mycolumn 第5栏 -->
+          <div class="mycolumn">
+            <div class="mycl-name">关于浅鱼</div>
+            <div class="mycl-content">
+              <ul>
+                <li><a href="#">浅鱼简介</a></li>
+                <li><a href="#">工作机会</a></li>
+                <li><a href="#">新闻资讯</a></li>
+                <li><a href="#">采购平台</a></li>
+                <li><a href="#">加盟平台</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li id="myfooter-right">
+          <div>
+            <a href="#"><img src="./images/zxkf.png"></a>
+          </div>
+          <br>
+          <p>400-678-9666</p>
+          <h6>24小时全国服务热线</h6>
+        </li>
+      </ul>
+      
+    </div>
+    <hr/>
+    <!-- 网页下边栏目录导航 结束 -->
+
+
+    <div id="my-copyright">
+      Copyright &copy;2018
+    </div>
     
     
 
